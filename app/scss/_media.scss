@@ -1,0 +1,371 @@
+@media screen and (max-width: 1330px) {
+  .header__main-figure {
+    top: 220px;
+    width: 580px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .menu {
+    &__list {
+      &-item {
+        margin-right: 40px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1145px) {
+  .response__menu {
+    display: block;
+    z-index: 4;
+  }
+  .menu {
+    display: none;
+  }
+
+  .header {
+    display: flex;
+    &__main {
+      margin-top: 80px;
+      display: flex;
+      flex-direction: column;
+      &-suptitle {
+        text-align: center;
+        font-size: 24px;
+      }
+      &-subtitle {
+        margin: 10px auto 90px auto;
+        width: 500px;
+        text-align: center;
+        font-size: 34px;
+      }
+      &-figure {
+        position: static;
+        width: 640px;
+        z-index: 1;
+        margin-left: 20px;
+      }
+    }
+  }
+
+  .statsbar {
+    justify-content: space-evenly;
+  }
+  .stat {
+    &__subtitle {
+      font-size: 16px;
+    }
+  }
+  .sports {
+    text-align: center;
+    &__title {
+      width: 100%;
+      font-weight: 700;
+    }
+  }
+  .card__box {
+    flex-wrap: wrap;
+    width: 680px;
+    margin: 0 auto;
+  }
+  .card {
+    margin-bottom: 50px;
+  }
+
+  .teachers {
+    text-align: center;
+  }
+  .sliders {
+    max-width: 750px;
+    margin: 0 auto;
+    & .slick-prev {
+      left: 260px;
+    }
+    & .slick-next {
+      right: 260px;
+    }
+    & .slick-dots {
+      left: 0px;
+    }
+  }
+  .footer {
+    &__wrapper {
+      justify-content: center;
+      justify-content: space-evenly;
+    }
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .statsbar {
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+    width: 600px;
+    justify-content: space-around;
+  }
+  .stat {
+    margin: 0px 60px 30px;
+    &__number {
+      font-size: 55px;
+    }
+    &__subtitle {
+      font-size: 16px;
+    }
+  }
+  .card__box {
+    justify-content: space-evenly;
+  }
+  .sliders {
+    max-width: 495px;
+    & .slick-prev {
+      left: 160px;
+    }
+    & .slick-next {
+      right: 160px;
+    }
+  }
+}
+@media screen and (max-width: 794px) {
+  .header {
+    &__main {
+      margin-top: 100px;
+      &-subtitle {
+        font-size: 30px;
+        margin-bottom: 100px;
+      }
+      &-figure {
+        width: 560px;
+        height: 370px;
+        margin-left: 30px;
+      }
+    }
+  }
+  .sports {
+    &__title {
+      font-size: 34px;
+    }
+  }
+  .card__box {
+    width: 540px;
+  }
+  .card {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .header {
+    &__main {
+      &-figure {
+        width: 520px;
+        height: 360px;
+      }
+    }
+  }
+  .statsbar {
+    width: 478px;
+  }
+  .stat {
+    margin: 0px 20px 30px;
+    &__number {
+      font-size: 46px;
+    }
+  }
+}
+@media screen and (max-width: 630px) {
+  .header {
+    &__main {
+      &-subtitle {
+        margin-bottom: 60px;
+      }
+      &-figure {
+        width: 480px;
+        height: 340px;
+      }
+    }
+  }
+  .sports {
+    &__title {
+      font-size: 34px;
+      width: 320px;
+      margin: 0px auto 60px auto;
+    }
+  }
+  .card__box {
+    width: 450px;
+  }
+  .card {
+    margin-bottom: 40px;
+  }
+  .teachers {
+    .media__center {
+      font-size: 30px;
+    }
+  }
+  .sliders {
+    max-width: 238px;
+    & .slick-prev {
+      left: 0px;
+    }
+    & .slick-next {
+      right: 0px;
+    }
+  }
+}
+@media screen and (max-width: 580px) {
+  .header {
+    height: 760px;
+    &__main {
+      &-subtitle {
+        width: 410px;
+        font-size: 28px;
+        margin-bottom: 0px;
+      }
+      &-figure {
+        width: 450px;
+        height: 310px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 530px) {
+  .header {
+    height: 720px;
+    &__main {
+      &-subtitle {
+        font-size: 26px;
+        width: 380px;
+        margin-left: 30px;
+      }
+      &-figure {
+        width: 410px;
+        height: 280px;
+        margin-left: 30px;
+      }
+    }
+  }
+  .statsbar {
+    width: 400px;
+  }
+  .stat {
+    margin: 0px 10px 30px;
+    &__number {
+      font-size: 44px;
+    }
+    &__subtitle {
+      font-size: 16px;
+    }
+  }
+  .footer {
+    &__wrapper {
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__content1 {
+      max-width: 212px;
+      margin-bottom: 20px;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .header {
+    height: 660px;
+    &__main {
+      &-suptitle {
+        margin-left: 30px;
+        font-size: 20px;
+      }
+      &-subtitle {
+        font-size: 24px;
+        margin-left: 30px;
+        width: 360px;
+      }
+      &-figure {
+        width: 380px;
+        height: 250px;
+        margin-left: 30px;
+      }
+    }
+  }
+  .sports {
+    &__title {
+      font-size: 32px;
+      width: 250px;
+    }
+  }
+  .card__box {
+    width: 300px;
+  }
+  .teachers {
+    .media__center {
+      margin: 20px auto 50px auto;
+      width: 266px;
+      font-size: 26px;
+      font-weight: 700;
+    }
+  }
+}
+@media screen and (max-width: 466px) {
+  .header {
+    height: 580px;
+    &__main {
+      margin-top: 70px;
+      &-subtitle {
+        font-size: 22px;
+        margin-left: 30px;
+        line-height: 18px;
+        width: 325px;
+      }
+      &-figure {
+        width: 320px;
+        height: 200px;
+      }
+    }
+  }
+  .statsbar {
+    flex-direction: column;
+    width: 100%;
+  }
+  .stat {
+    margin: 0px 0px 40px;
+    &__number {
+      font-size: 48px;
+    }
+    &__subtitle {
+      font-size: 17px;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .header {
+    height: 500px;
+    &__main {
+      flex-direction: column-reverse;
+      margin-top: 50px;
+      &-suptitle {
+        font-size: 19px;
+      }
+      &-subtitle {
+        font-size: 19px;
+        line-height: 20px;
+        width: 280px;
+      }
+      &-figure {
+        width: 290px;
+        height: 170px;
+        margin-bottom: 80px;
+      }
+    }
+  }
+  .teachers {
+    .media__center {
+      margin: 20px auto 50px auto;
+      width: 254px;
+      font-size: 25px;
+      font-weight: 400;
+    }
+  }
+}

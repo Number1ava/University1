@@ -1,0 +1,365 @@
+@import "mixin";
+@import "libs";
+@import "fonts";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: inherit;
+}
+
+.container__header {
+  max-width: 1615px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.container__main {
+  max-width: 1035px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  height: 100vh;
+  background-image: url("../images/figure_bg.png");
+  @include background_size;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 150px;
+  &__list {
+    display: flex;
+    align-items: center;
+    &-link {
+      font-size: 18px;
+      font-weight: 500;
+    }
+    &-item {
+      margin-right: 50px;
+      position: relative;
+      cursor: pointer;
+    }
+
+    &-item:nth-last-child() {
+      margin-right: 0;
+    }
+  }
+
+  &__item-arrow::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    bottom: 5px;
+    width: 17px;
+    height: 12px;
+    background-image: url("../icons/arrow.svg");
+  }
+}
+
+.response__menu {
+  display: none;
+  width: 260px;
+  position: fixed;
+  left: -220px;
+  top: 0;
+  bottom: 0;
+  transition: all ease 0.5s;
+  cursor: pointer;
+  background: #103269;
+  &:hover {
+    left: 0;
+  }
+  &::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url("../icons/burger__menu.svg");
+    position: absolute;
+    top: 36px;
+    right: 11px;
+    background-repeat: no-repeat;
+  }
+  .response__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-right: 70px;
+  }
+  .response__list {
+    display: block;
+    padding: 10px 0px 5px 50px;
+    &-item {
+      margin: 20px 0;
+    }
+  }
+  .response__lang {
+    margin-left: 50px;
+  }
+}
+.logo {
+  display: flex;
+  align-items: center;
+  &__text {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+.header__main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+  &-title {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+  }
+  &-subtitle {
+    width: 530px;
+    min-height: 160px;
+    font-size: 34px;
+  }
+  &-figure {
+    width: 650px;
+    height: 400px;
+  }
+}
+
+.main {
+  @include main_bg;
+}
+
+.quantity {
+  min-height: 264px;
+  padding: 80px 0;
+  text-align: center;
+}
+.statsbar {
+  display: flex;
+  justify-content: space-between;
+}
+.stat {
+  &__number {
+    color: #2d9cdb;
+    font-weight: 700;
+    font-size: 50px;
+    transition: all ease 0.6s;
+    &:hover {
+      color: #0061ff;
+    }
+  }
+  &__subtitle {
+    color: white;
+    font-weight: 700;
+  }
+}
+.section__title {
+  font-weight: 400;
+  font-size: 38px;
+  letter-spacing: 0.2px;
+  color: white;
+  margin: 40px 0 80px 0;
+}
+
+// Section ======= sports
+.sports {
+  min-height: 600px;
+  &__title {
+    width: 412px;
+  }
+}
+.card__box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  @include card_bg;
+  align-items: center;
+  width: 230px;
+  min-height: 320px;
+  padding: 34px 10px 10px 10px;
+  border-radius: 5px;
+  position: relative;
+  text-align: center;
+  transition: all ease 0.4s;
+  &:hover {
+    transform: scale3d(1.03, 1.03, 1);
+  }
+  &__image {
+    transition: all ease 0.4s;
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+  &__title {
+    text-align: center;
+    margin: 20px 0px 10px 0px;
+    padding-bottom: 2px;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  &__descr {
+    font-weight: 500;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+    margin: 0;
+  }
+  &:hover &__image {
+    transform: translateY(-20px);
+  }
+  &:hover &__image img {
+    transform: translate(-0px, -0px) rotate(-0deg) scale(1);
+  }
+}
+
+// Section ======= teachers
+.teachers {
+  min-height: 540px;
+}
+.social__network {
+  display: flex;
+  align-items: center;
+  color: white;
+  &-centerMargin {
+    margin: 0 14px;
+  }
+  &--properties {
+    justify-content: center;
+    padding: 10px 0;
+  }
+}
+.sliders {
+  &__item {
+    margin: 0;
+    padding: 0;
+    border-radius: 6px;
+    @include card_bg;
+    &-bottom {
+      background-color: #0061ff;
+    }
+    &-subtitle {
+      font-weight: 700;
+      line-height: 24px;
+      text-align: center;
+      letter-spacing: 0.1px;
+      color: white;
+      padding-top: 6px;
+    }
+  }
+  & .slick-slide {
+    outline: none;
+    margin: 0 7.6px;
+  }
+  & .slick-arrow {
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    background-color: transparent;
+    top: 340px;
+    transform: translateY(-50%);
+    z-index: 5;
+  }
+  & .slick-prev {
+    left: 390px;
+  }
+  & .slick-next {
+    right: 400px;
+  }
+
+  & .slick-dots button {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 3px solid white;
+    padding: 0;
+    font-size: 0;
+    outline: none;
+    cursor: pointer;
+  }
+  & .slick-dots .slick-active button {
+    background-color: #0061ff;
+  }
+  & .slick-dots li {
+    display: inline-block;
+    margin: 2px;
+  }
+  & .slick-dots {
+    position: absolute;
+    margin: 20px;
+    left: 448px;
+    right: 0;
+    top: 302px;
+  }
+}
+.footer {
+  min-height: 200px;
+  &__wrapper {
+    display: flex;
+    padding: 50px 0px;
+  }
+  &__content1 {
+    max-width: 137px;
+    &-title {
+      margin-bottom: 25px;
+      color: #0061ff;
+    }
+    &-link {
+      color: black;
+      margin: 10px 0;
+      display: block;
+    }
+  }
+  &__content2 {
+    &-phone {
+      display: block;
+      margin: 14px 0;
+      color: black;
+    }
+    &-location {
+      margin-bottom: 15px;
+    }
+  }
+}
+@import "media";

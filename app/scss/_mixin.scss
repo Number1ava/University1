@@ -1,0 +1,15 @@
+@mixin main_bg {
+  background-color: #26335d;
+}
+@mixin card_bg {
+  background: white;
+}
+
+@mixin second_text {
+  color: #185fda;
+}
+@mixin background_size {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
