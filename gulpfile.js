@@ -70,6 +70,7 @@ function styles() {
 function build() {
   return src([
     'app/css/style.min.css',
+    'app/icons',
     'app/fonts/**/*',
     'app/js/main.min.js',
     'app/*.html'

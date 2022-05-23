@@ -157,7 +157,9 @@
 }
 @media screen and (max-width: 680px) {
   .header {
+    min-height: 300px;
     &__main {
+      padding-bottom: 60px;
       &-figure {
         width: 520px;
         height: 360px;
@@ -221,7 +223,7 @@
       &-subtitle {
         width: 410px;
         font-size: 28px;
-        margin-bottom: 0px;
+        margin-bottom: 160px;
       }
       &-figure {
         width: 450px;
@@ -318,6 +320,7 @@
         margin-left: 30px;
         line-height: 18px;
         width: 325px;
+        margin-bottom: 120px;
       }
       &-figure {
         width: 320px;

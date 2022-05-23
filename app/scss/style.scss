@@ -49,7 +49,7 @@ h6 {
 }
 
 .header {
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("../images/figure_bg.png");
   @include background_size;
   color: white;
@@ -151,7 +151,7 @@ h6 {
   }
   &-subtitle {
     width: 530px;
-    min-height: 160px;
+    height: 60px;
     font-size: 34px;
   }
   &-figure {
@@ -302,9 +302,11 @@ h6 {
   }
   & .slick-prev {
     left: 390px;
+    z-index: 0;
   }
   & .slick-next {
     right: 400px;
+    z-index: 0;
   }
 
   & .slick-dots button {
