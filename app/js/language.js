@@ -1,6 +1,6 @@
 const langArr = {
   // Элементы навигации
-  navElems1: {
+  navElem1: {
     uz: 'Yangiliklar',
     ru: 'Новости',
   },
