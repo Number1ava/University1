@@ -73,4 +73,16 @@ window.addEventListener("DOMContentLoaded", function () {
       }
     }
   }
+  document
+    .querySelectorAll('.lang button')
+    .forEach((b) => b.addEventListener('click', setLang));
+
+  function setLang() {
+    for (let key in langArr2) {
+      let elem2 = document.querySelector('.lng2-' + key);
+      if (elem2) {
+        elem2.innerHTML = langArr2[key][this.value];
+      }
+    }
+  }
 });
