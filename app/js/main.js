@@ -74,15 +74,15 @@ window.addEventListener("DOMContentLoaded", function () {
     }
   }
   document
-    .querySelectorAll('.lang button')
-    .forEach((b) => b.addEventListener('click', setLang));
+    .querySelectorAll('.lang2 button')
+    .forEach((d) => d.addEventListener('click', setLang2));
 
-  function setLang() {
-    for (let key in langArr2) {
-      let elem2 = document.querySelector('.lng2-' + key);
+  function setLang2() {
+    for (let key2 in langArr2) {
+      let elem2 = document.querySelector('.lng2-' + key2);
       if (elem2) {
-        elem2.innerHTML = langArr2[key][this.value];
-      }
-    }
-  }
+        elem2.innerHTML = langArr2[key2][this.value];
+      };
+    };
+  };
 });
