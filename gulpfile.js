@@ -47,7 +47,7 @@ function images() {
 
 function scripts() {
   return src([
-    'node_modules/jquery/dist/jquery.min.js', 'app/js/main.js', 'node_modules/slick-carousel/slick/slick.min.js', 'node_modules/wowjs/dist/wow.js', 'node_modules/bootstrap/dist/js/bootstrap.bundle.js'
+    'node_modules/jquery/dist/jquery.min.js', 'app/js/main.js', 'app/js/language.js', 'node_modules/slick-carousel/slick/slick.min.js', 'node_modules/wowjs/dist/wow.js', 'node_modules/bootstrap/dist/js/bootstrap.bundle.js'
   ])
     .pipe(concat('main.min.js'))
     .pipe(uglify())
