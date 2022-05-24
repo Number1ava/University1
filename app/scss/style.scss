@@ -88,6 +88,16 @@ h6 {
     background-image: url("../icons/arrow.svg");
   }
 }
+.lang__btn {
+  width: 45px;
+  height: 25px;
+  border-radius: 5px;
+  border: none;
+  background-color: white;
+  color: #0061ff;
+  font-weight: 700;
+  cursor: pointer;
+}
 
 .response__menu {
   display: none;
