@@ -53,6 +53,7 @@ h6 {
   background-image: url("../images/figure_bg.png");
   @include background_size;
   color: white;
+  padding-bottom: 40px;
 }
 
 .menu {

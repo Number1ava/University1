@@ -1,4 +1,4 @@
-@media screen and (max-width: 1330px) {
+@media all and (max-width: 1330px) {
   .header__main-figure {
     top: 220px;
     width: 580px;
@@ -16,7 +16,7 @@
   }
 }
 
-@media screen and (max-width: 1145px) {
+@media (max-width: 1145px) {
   .response__menu {
     display: block;
     z-index: 4;
@@ -98,7 +98,7 @@
   }
 }
 
-@media screen and (max-width: 880px) {
+@media (max-width: 880px) {
   .statsbar {
     flex-wrap: wrap;
     align-items: center;
@@ -128,7 +128,7 @@
     }
   }
 }
-@media screen and (max-width: 794px) {
+@media (max-width: 794px) {
   .header {
     &__main {
       margin-top: 100px;
@@ -155,9 +155,8 @@
     margin-bottom: 40px;
   }
 }
-@media screen and (max-width: 680px) {
+@media (max-width: 680px) {
   .header {
-    min-height: 300px;
     &__main {
       padding-bottom: 60px;
       &-figure {
@@ -176,7 +175,7 @@
     }
   }
 }
-@media screen and (max-width: 630px) {
+@media (max-width: 630px) {
   .header {
     &__main {
       &-subtitle {
@@ -216,9 +215,8 @@
     }
   }
 }
-@media screen and (max-width: 580px) {
+@media (max-width: 580px) {
   .header {
-    height: 760px;
     &__main {
       &-subtitle {
         width: 410px;
@@ -232,9 +230,8 @@
     }
   }
 }
-@media screen and (max-width: 530px) {
+@media (max-width: 530px) {
   .header {
-    height: 720px;
     &__main {
       &-subtitle {
         font-size: 26px;
@@ -272,9 +269,8 @@
     }
   }
 }
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
   .header {
-    height: 660px;
     &__main {
       &-suptitle {
         margin-left: 30px;
@@ -310,9 +306,8 @@
     }
   }
 }
-@media screen and (max-width: 466px) {
+@media (max-width: 466px) {
   .header {
-    height: 580px;
     &__main {
       margin-top: 70px;
       &-subtitle {
@@ -342,9 +337,9 @@
     }
   }
 }
-@media screen and (max-width: 400px) {
+@media (max-width: 400px) {
   .header {
-    height: 500px;
+    padding-bottom: 0px;
     &__main {
       flex-direction: column-reverse;
       margin-top: 50px;
@@ -370,5 +365,10 @@
       font-size: 25px;
       font-weight: 400;
     }
+  }
+}
+@media (orientation: portrait) {
+  .header {
+    min-height: 100px;
   }
 }

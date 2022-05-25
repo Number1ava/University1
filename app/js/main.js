@@ -53,7 +53,7 @@ window.addEventListener("DOMContentLoaded", function () {
       nextArrow: '<button type="button" class="slick-next"><img src="icons/arrow_right.svg" alt="arrow"></button>',
       responsive: [
         {
-          breakpoint: 630,
+          breakpoint: 631,
           settings: {
             centerMode: true,
           }
