@@ -61,6 +61,27 @@ window.addEventListener("DOMContentLoaded", function () {
       ]
     });
   });
+  function burgerMenu(selector) {
+    let menu = $(selector);
+    let button = menu.find(".burger__menu-button");
+    let overlay = menu.find('.burger__menu-overlay');
+    button.on("click", (e) => {
+      e.preventDefault();
+      toggleMenu();
+    });
+
+    overlay.on('click', () => toggleMenu());
+
+    function toggleMenu() {
+      menu.toggleClass('burger__menu-active');
+      if (menu.hasClass('burger__menu-active')) {
+        $('body').css('overflow', 'hidden');
+      } else {
+        $('body').css('overflow', 'visible');
+      }
+    }
+  }
+  burgerMenu(".burger__menu");
   document
     .querySelectorAll('.lang button')
     .forEach((b) => b.addEventListener('click', setLang));

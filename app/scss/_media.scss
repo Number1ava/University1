@@ -17,12 +17,113 @@
 }
 
 @media (max-width: 1145px) {
-  .response__menu {
-    display: block;
-    z-index: 4;
-  }
   .menu {
     display: none;
+    &__list {
+      align-items: stretch;
+      &-item {
+        margin: 0;
+      }
+      &-link {
+        font-weight: 500;
+      }
+    }
+  }
+  .burger__menu {
+    &-button {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 30;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      transition: 0.5s;
+    }
+    &:hover &-lines {
+      filter: brightness(0.7);
+    }
+    &-lines,
+    &-lines::after,
+    &-lines::before {
+      position: absolute;
+      width: 30px;
+      height: 4px;
+      background-color: #fff;
+    }
+    &-lines {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &-lines::before {
+      content: "";
+      top: -12px;
+    }
+    &-lines::after {
+      content: "";
+      top: 12px;
+    }
+    &-active &-button,
+    &-active &-lines {
+      background-color: transparent;
+    }
+    &-active &-lines::before {
+      top: 0;
+      transform: rotate(45deg);
+    }
+    &-active &-lines::after {
+      top: 0;
+      transform: rotate(-45deg);
+    }
+    .response__menu {
+      padding-top: 60px;
+      position: fixed;
+      z-index: 20;
+      display: flex;
+      flex-flow: column;
+      height: 100%;
+      background-color: #103269;
+      overflow-y: auto;
+      left: -100%;
+      transition: 0.5s;
+      width: 240px;
+      .response__list {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        margin: 0px auto 20px auto;
+        &-item {
+          margin: 10px 0;
+          font-size: 18px;
+          color: white;
+        }
+      }
+    }
+    .response__logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+    .response__lang {
+      margin: 0 auto;
+    }
+    &-active .response__menu {
+      left: 0;
+    }
+    &-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vh;
+      height: 100vh;
+      z-index: 10;
+    }
+    &-active &-overlay {
+      display: block;
+    }
   }
 
   .header {

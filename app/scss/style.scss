@@ -101,57 +101,8 @@ h6 {
   background: transparent;
   cursor: pointer;
 }
-
 .response__menu {
   display: none;
-  width: 260px;
-  position: fixed;
-  left: -220px;
-  top: 0;
-  bottom: 0;
-  transition: all ease 0.5s;
-  cursor: pointer;
-  background: #103269;
-  &:hover {
-    left: 0;
-  }
-  &::before {
-    content: "";
-    display: block;
-    width: 20px;
-    height: 20px;
-    background: url("../icons/burger__menu.svg");
-    position: absolute;
-    top: 36px;
-    right: 11px;
-    background-repeat: no-repeat;
-  }
-  .response__logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-    padding-right: 70px;
-  }
-  .response__list {
-    display: block;
-    padding: 10px 0px 5px 50px;
-    &-item {
-      margin: 20px 0;
-    }
-  }
-  .lang2 {
-    display: flex;
-    align-items: center;
-  }
-  .response__lang {
-    width: 40px;
-    height: 22px;
-    margin-left: 44px;
-    border: none;
-    background: transparent;
-    cursor: pointer;
-  }
 }
 .logo {
   display: flex;
