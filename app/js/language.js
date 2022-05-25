@@ -300,4 +300,25 @@ const langArr2 = {
     uz: "Pedagogik xodimlar",
     ru: "Педагогический состав",
   },
+  // Footer: Подвал сайта
+  footer_title1: {
+    uz: "Universitet",
+    ru: "Университет",
+  },
+  footer_title2: {
+    uz: "Ijtimoiy tarmoq",
+    ru: "Соцсети",
+  },
+  univer_link1: {
+    uz: "Xalqaro va mahalliy munosabatlar",
+    ru: "Международные и местные связи",
+  },
+  univer_link2: {
+    uz: "Rekvizitlar",
+    ru: "Реквизиты",
+  },
+  univer_link3: {
+    uz: "Talabalarni qabul qilish",
+    ru: "Прием студентов",
+  },
 };
