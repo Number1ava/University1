@@ -88,14 +88,16 @@ h6 {
     background-image: url("../icons/arrow.svg");
   }
 }
+.lang {
+  display: flex;
+  align-items: center;
+}
 .lang__btn {
-  width: 45px;
-  height: 25px;
-  border-radius: 5px;
+  width: 40px;
+  height: 22px;
+  margin: 0 5px;
   border: none;
-  background-color: white;
-  color: #0061ff;
-  font-weight: 700;
+  background: transparent;
   cursor: pointer;
 }
 
@@ -137,8 +139,17 @@ h6 {
       margin: 20px 0;
     }
   }
+  .lang2 {
+    display: flex;
+    align-items: center;
+  }
   .response__lang {
-    margin-left: 50px;
+    width: 40px;
+    height: 22px;
+    margin-left: 44px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
   }
 }
 .logo {
