@@ -67,6 +67,7 @@ h6 {
     &-link {
       font-size: 18px;
       font-weight: 500;
+      @include Exo2_Regular;
     }
     &-item {
       margin-right: 50px;
@@ -108,6 +109,7 @@ h6 {
   display: flex;
   align-items: center;
   &__text {
+    @include Exo2_Bold;
     font-size: 18px;
     font-weight: 600;
   }
@@ -121,11 +123,13 @@ h6 {
     font-size: 20px;
     line-height: 40px;
     letter-spacing: 0.2px;
+    @include Exo2_Regular;
   }
   &-subtitle {
     width: 530px;
     height: 60px;
     font-size: 34px;
+    @include Exo2_SemiBold;
   }
   &-figure {
     width: 650px;
@@ -159,6 +163,7 @@ h6 {
   &__subtitle {
     color: white;
     font-weight: 700;
+    @include Exo2_Regular;
   }
 }
 .section__title {
@@ -167,6 +172,7 @@ h6 {
   letter-spacing: 0.2px;
   color: white;
   margin: 40px 0 80px 0;
+  @include Exo2_SemiBold;
 }
 
 // Section ======= sports
@@ -208,6 +214,7 @@ h6 {
     color: black;
     font-size: 20px;
     font-weight: 700;
+    @include Exo2_Regular;
   }
   &__descr {
     font-weight: 500;
@@ -215,6 +222,7 @@ h6 {
     font-size: 16px;
     color: black;
     margin: 0;
+    @include Exo2_SemiBold;
   }
   &:hover &__image {
     transform: translateY(-20px);
@@ -256,6 +264,7 @@ h6 {
       letter-spacing: 0.1px;
       color: white;
       padding-top: 6px;
+      @include Exo2_Regular;
     }
   }
   & .slick-slide {
@@ -319,21 +328,27 @@ h6 {
     &-title {
       margin-bottom: 25px;
       color: #0061ff;
+      @include Exo2_Bold;
     }
     &-link {
       color: black;
       margin: 10px 0;
       display: block;
+      @include Exo2_Regular;
     }
   }
   &__content2 {
+    @include Exo2_Regular;
+    margin-left: 20px;
     &-phone {
       display: block;
       margin: 14px 0;
       color: black;
+      font-family: inherit;
     }
     &-location {
       margin-bottom: 15px;
+      @include Exo2_Regular;
     }
   }
 }

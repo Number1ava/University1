@@ -13,3 +13,13 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+@mixin Exo2_Regular {
+  font-family: "Exo2_Regular";
+}
+@mixin Exo2_SemiBold {
+  font-family: "Exo2_SemiBold";
+}
+@mixin Exo2_Bold {
+  font-family: "Exo2_Bold";
+}
