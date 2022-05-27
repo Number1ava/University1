@@ -96,9 +96,21 @@
         margin: 0px auto 20px auto;
         &-item {
           margin: 10px 0;
-          font-size: 18px;
+          font-size: 19px;
           color: white;
         }
+      }
+      &__item-arrow::after {
+        display: none;
+      }
+      &__item-arrow::before {
+        content: "";
+        position: absolute;
+        left: -22px;
+        bottom: 4px;
+        width: 17px;
+        height: 12px;
+        background-image: url("../icons/arrow.svg");
       }
     }
     .logo {
@@ -108,7 +120,7 @@
       margin-bottom: 40px;
     }
     .lang {
-      margin: 0 auto;
+      margin: 0 28px 0 0;
       padding-bottom: 30px;
     }
     &-active .menu {

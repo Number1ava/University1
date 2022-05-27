@@ -5,7 +5,7 @@ window.addEventListener("DOMContentLoaded", function () {
     $("html,body").addClass("hidden");
     setTimeout(function () {
       $("html,body").removeClass("hidden");
-    }, 1100);
+    }, 1000);
   });
   $(function () {
     let fx = function fx() {
