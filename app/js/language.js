@@ -131,6 +131,22 @@ const langArr = {
     uz: "Asosiy g'oya - sportchini yoki bir juft sportchini konkida muz ustida harakatlantirish va musiqaga maxsus elementlarni bajarish.",
     ru: "Основная идея в передвижении спортсмена или пары спортсменов по льду на коньках и выполнении специальных элементов под музыку.",
   },
+  btn_more1: {
+    uz: "Qo'shimcha ma'lumot",
+    ru: "Узнать больше",
+  },
+  btn_more2: {
+    uz: "Qo'shimcha ma'lumot",
+    ru: "Узнать больше",
+  },
+  btn_more3: {
+    uz: "Qo'shimcha ma'lumot",
+    ru: "Узнать больше",
+  },
+  btn_more4: {
+    uz: "Qo'shimcha ma'lumot",
+    ru: "Узнать больше",
+  },
   // Секция с преподователями
   teachers_title: {
     uz: "Pedagogik xodimlar",
@@ -144,6 +160,10 @@ const langArr = {
   footer_title2: {
     uz: "Ijtimoiy tarmoq",
     ru: "Соцсети",
+  },
+  footer_location: {
+    uz: "Chirchiq, st. Sportchilar, 19",
+    ru: "Чирчик, ул.Спортсменов, 19",
   },
   univer_link1: {
     uz: "Xalqaro va mahalliy munosabatlar",
@@ -295,6 +315,22 @@ const langArr2 = {
     uz: "Asosiy g'oya - sportchini yoki bir juft sportchini konkida muz ustida harakatlantirish va musiqaga maxsus elementlarni bajarish.",
     ru: "Основная идея в передвижении спортсмена или пары спортсменов по льду на коньках и выполнении специальных элементов под музыку.",
   },
+  btn_more1: {
+    uz: "Qo'shimcha ma'lumot",
+    ru: "Узнать больше",
+  },
+  btn_more2: {
+    uz: "Qo'shimcha ma'lumot",
+    ru: "Узнать больше",
+  },
+  btn_more3: {
+    uz: "Qo'shimcha ma'lumot",
+    ru: "Узнать больше",
+  },
+  btn_more4: {
+    uz: "Qo'shimcha ma'lumot",
+    ru: "Узнать больше",
+  },
   // Секция с преподователями
   teachers_title: {
     uz: "Pedagogik xodimlar",
@@ -308,6 +344,10 @@ const langArr2 = {
   footer_title2: {
     uz: "Ijtimoiy tarmoq",
     ru: "Соцсети",
+  },
+  footer_location: {
+    uz: "Chirchiq, st. Sportchilar, 19",
+    ru: "Чирчик, ул.Спортсменов, 19",
   },
   univer_link1: {
     uz: "Xalqaro va mahalliy munosabatlar",

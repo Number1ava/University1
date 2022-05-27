@@ -99,6 +99,9 @@
           color: white;
         }
       }
+      .dropdown-item {
+        @include Exo2_Regular;
+      }
     }
     .response__logo {
       display: flex;
