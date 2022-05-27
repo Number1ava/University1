@@ -92,15 +92,13 @@ h6 {
     margin-right: var(--m-offset);
     &::before {
       --i: 1;
-      border: 3px solid #ff7ab5;
+      border: 3px solid #ff3b7e;
       border-radius: 50%;
     }
     &::after {
       --i: 3;
       background-color: #c643fb;
-      @supports (clip-path: circle()) {
-        clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
-      }
+      border-radius: 50%;
     }
   }
 
@@ -108,15 +106,12 @@ h6 {
     &::before {
       --i: 2;
       border: 3px solid #ffb650;
+      border-radius: 50%;
     }
     &::after {
       --i: 4;
       background-color: #2fe2dd;
       border-radius: 50%;
-      @supports (clip-path: circle()) {
-        border-radius: 0;
-        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-      }
     }
   }
 }
