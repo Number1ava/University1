@@ -146,7 +146,7 @@
       }
       &-figure {
         position: static;
-        width: 640px;
+        width: 100%;
         z-index: 1;
       }
     }
@@ -239,7 +239,6 @@
         margin-bottom: 100px;
       }
       &-figure {
-        width: 560px;
         height: 370px;
       }
     }
@@ -261,7 +260,6 @@
     &__main {
       padding-bottom: 60px;
       &-figure {
-        width: 520px;
         height: 360px;
       }
     }
@@ -283,7 +281,6 @@
         margin-bottom: 60px;
       }
       &-figure {
-        width: 480px;
         height: 340px;
       }
     }
@@ -325,7 +322,6 @@
         margin-bottom: 160px;
       }
       &-figure {
-        width: 450px;
         height: 310px;
       }
     }
@@ -339,7 +335,6 @@
         width: 380px;
       }
       &-figure {
-        width: 410px;
         height: 280px;
       }
     }
@@ -384,7 +379,6 @@
         width: 360px;
       }
       &-figure {
-        width: 380px;
         height: 250px;
       }
     }
@@ -418,8 +412,7 @@
         margin-bottom: 120px;
       }
       &-figure {
-        width: 320px;
-        height: 200px;
+        height: 100%;
       }
     }
   }
@@ -465,8 +458,6 @@
         margin-bottom: 20px;
       }
       &-figure {
-        width: 290px;
-        height: 170px;
         margin-bottom: 50px;
       }
     }
