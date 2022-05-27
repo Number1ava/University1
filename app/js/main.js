@@ -1,6 +1,12 @@
 
 window.addEventListener("DOMContentLoaded", function () {
-
+  $(window).on('load', function () {
+    $('.loader__wrap').delay(1100).fadeOut('slow');
+    $("html,body").addClass("hidden");
+    setTimeout(function () {
+      $("html,body").removeClass("hidden");
+    }, 1100);
+  });
   $(function () {
     let fx = function fx() {
       let dfd = $(".stat__number").map(function (i, el) {

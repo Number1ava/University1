@@ -13,6 +13,10 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+@mixin same-size($sz) {
+  width: $sz;
+  height: $sz;
+}
 
 @mixin Exo2_Regular {
   font-family: "Exo2_Regular";
