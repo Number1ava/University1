@@ -76,19 +76,20 @@
       top: 0;
       transform: rotate(-45deg);
     }
-    .response__menu {
+    .menu {
       padding-top: 60px;
       position: fixed;
       z-index: 20;
       display: flex;
       flex-flow: column;
+      justify-content: stretch;
       height: 100%;
       background-color: #103269;
       overflow-y: auto;
       left: -100%;
       transition: 0.5s;
       width: 240px;
-      .response__list {
+      &__list {
         display: flex;
         flex-direction: column;
         text-align: start;
@@ -99,21 +100,18 @@
           color: white;
         }
       }
-      .dropdown-item {
-        @include Exo2_Regular;
-      }
     }
-    .response__logo {
+    .logo {
       display: flex;
       flex-direction: column;
       align-items: center;
       margin-bottom: 40px;
     }
-    .response__lang {
+    .lang {
       margin: 0 auto;
       padding-bottom: 30px;
     }
-    &-active .response__menu {
+    &-active .menu {
       left: 0;
     }
     &-overlay {
