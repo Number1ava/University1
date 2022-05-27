@@ -80,11 +80,11 @@ h6 {
     }
   }
 
-  &__item-arrow::before {
+  &__item-arrow::after {
     content: "";
     position: absolute;
-    left: -20px;
-    bottom: 5px;
+    right: -22px;
+    bottom: 2px;
     width: 17px;
     height: 12px;
     background-image: url("../icons/arrow.svg");
