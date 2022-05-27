@@ -319,10 +319,10 @@
       &-subtitle {
         width: 410px;
         font-size: 28px;
-        margin-bottom: 160px;
+        margin-bottom: 100px;
       }
       &-figure {
-        height: 310px;
+        height: 100%;
       }
     }
   }
@@ -333,9 +333,6 @@
       &-subtitle {
         font-size: 26px;
         width: 380px;
-      }
-      &-figure {
-        height: 280px;
       }
     }
   }
@@ -371,15 +368,16 @@
     min-height: 100vh;
     padding-bottom: 60px;
     &__main {
+      &-title {
+        line-height: 26px;
+      }
       &-suptitle {
         font-size: 20px;
       }
       &-subtitle {
         font-size: 24px;
         width: 360px;
-      }
-      &-figure {
-        height: 250px;
+        margin-bottom: 60px;
       }
     }
   }
@@ -409,10 +407,6 @@
         font-size: 22px;
         line-height: 30px;
         width: 325px;
-        margin-bottom: 120px;
-      }
-      &-figure {
-        height: 100%;
       }
     }
   }
