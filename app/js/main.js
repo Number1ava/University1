@@ -1,5 +1,6 @@
 
 window.addEventListener("DOMContentLoaded", function () {
+
   $(function () {
     let fx = function fx() {
       let dfd = $(".stat__number").map(function (i, el) {
@@ -29,7 +30,7 @@ window.addEventListener("DOMContentLoaded", function () {
     };
 
     let reset = function reset() {
-      console.log($(this).scrollTop());
+      // console.log($(this).scrollTop());
       // do stuff when window `.scrollTop()` > 75
       if ($(this).scrollTop() > 75) {
 
@@ -38,7 +39,9 @@ window.addEventListener("DOMContentLoaded", function () {
       }
     };
     $(window).on("scroll", reset);
+
   });
+
 
   $(function () {
     $('.sliders').slick({
