@@ -7,47 +7,35 @@ window.addEventListener("DOMContentLoaded", function () {
       $("html,body").removeClass("hidden");
     }, 1000);
   });
-  $(function () {
-    let fx = function fx() {
-      let dfd = $(".stat__number").map(function (i, el) {
-        let data = parseInt(this.dataset.n, 10);
-        let props = {
-          "from": {
-            "count": 0
-          },
-          "to": {
-            "count": data
-          }
-        };
-        return $(props.from).animate(props.to, {
-          duration: 2000 * 1,
-          step: function (now) {
-            $(el).text(Math.ceil(now));
+
+  let a = 0;
+
+  $(window).scroll(function () {
+    let oTop = $('.statsbar').offset().top - window.innerHeight;
+
+    if (a == 0 && $(window).scrollTop() > oTop) {
+      $('.stat__number').each(function () {
+        let $this = $(this),
+          countTo = $this.attr('data-n');
+
+        $({
+          countNum: $this.text()
+        }).animate({
+          countNum: countTo
+        }, {
+          duration: 2000,
+          easing: 'swing',
+          step: function () {
+            $this.text(Math.floor(this.countNum));
           },
           complete: function () {
-            if (el.dataset.sym !== undefined) {
-              el.textContent = el.textContent.concat(el.dataset.sym)
-            }
+            $this.text(this.countNum);
           }
-        }).promise();
-      }).toArray();
-      // return jQuery promise when all animations complete
-      return $.when.apply($, dfd);
-    };
-
-    let reset = function reset() {
-      // console.log($(this).scrollTop());
-      // do stuff when window `.scrollTop()` > 75
-      if ($(this).scrollTop() > 75) {
-
-        $(this).off("scroll");
-        fx()
-      }
-    };
-    $(window).on("scroll", reset);
-
+        });
+      });
+      a = 1;
+    }
   });
-
 
   $(function () {
     $('.sliders').slick({

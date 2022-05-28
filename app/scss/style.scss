@@ -92,12 +92,12 @@ h6 {
     margin-right: var(--m-offset);
     &::before {
       --i: 1;
-      border: 3px solid #ff3b7e;
+      border: 3px solid #2fe2dd;
       border-radius: 50%;
     }
     &::after {
       --i: 3;
-      background-color: #c643fb;
+      background-color: #ffff;
       border-radius: 50%;
     }
   }
@@ -105,12 +105,12 @@ h6 {
   &:nth-of-type(2) {
     &::before {
       --i: 2;
-      border: 3px solid #ffb650;
+      border: 3px solid #2fe2dd;
       border-radius: 50%;
     }
     &::after {
       --i: 4;
-      background-color: #2fe2dd;
+      background-color: #ffff;
       border-radius: 50%;
     }
   }
@@ -232,6 +232,7 @@ h6 {
   display: flex;
   justify-content: space-between;
 }
+
 .stat {
   &__number {
     color: #2d9cdb;
