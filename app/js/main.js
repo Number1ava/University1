@@ -5,7 +5,7 @@ window.addEventListener("DOMContentLoaded", function () {
     $("html,body").addClass("hidden");
     setTimeout(function () {
       $("html,body").removeClass("hidden");
-    }, 1000);
+    }, 900);
   });
 
   let a = 0;
@@ -41,10 +41,10 @@ window.addEventListener("DOMContentLoaded", function () {
     $('.sliders').slick({
       arrows: true,
       dots: true,
-      slidesToShow: 4,
+      slidesToShow: 2,
       slidesToScroll: 2,
       autoplay: true,
-      autoplaySpeed: 4000,
+      autoplaySpeed: 3800,
       variableWidth: true,
       prevArrow: '<button type="button" class="slick-prev"><img src="icons/arrow_left.svg" alt="arrow"></button>',
       nextArrow: '<button type="button" class="slick-next"><img src="icons/arrow_right.svg" alt="arrow"></button>',
@@ -66,9 +66,7 @@ window.addEventListener("DOMContentLoaded", function () {
       e.preventDefault();
       toggleMenu();
     });
-
     overlay.on('click', () => toggleMenu());
-
     function toggleMenu() {
       menu.toggleClass('burger__menu-active');
       if (menu.hasClass('burger__menu-active')) {
@@ -79,6 +77,7 @@ window.addEventListener("DOMContentLoaded", function () {
     }
   }
   burgerMenu(".burger__menu");
+
   document
     .querySelectorAll('.lang button')
     .forEach((b) => b.addEventListener('click', setLang));
