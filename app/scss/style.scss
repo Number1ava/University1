@@ -158,10 +158,6 @@ h6 {
       position: relative;
       cursor: pointer;
     }
-
-    &-item:nth-last-child() {
-      margin-right: 0;
-    }
   }
 
   &__item-arrow::after {

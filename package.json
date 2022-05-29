@@ -18,10 +18,11 @@
     "gulp-concat": "^2.6.1",
     "gulp-gh-pages": "^0.5.4",
     "gulp-imagemin": "^7.1.0",
-    "gulp-sass": "^4.1.0",
+    "gulp-sass": "^5.1.0",
     "gulp-uglify-es": "^2.0.0",
     "jquery": "^3.6.0",
     "normalize.css": "^8.0.1",
+    "sass": "^1.52.1",
     "slick-carousel": "^1.8.1",
     "wowjs": "^1.1.3"
   }
