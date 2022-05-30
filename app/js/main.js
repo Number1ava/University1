@@ -39,24 +39,57 @@ window.addEventListener("DOMContentLoaded", function () {
 
   $(function () {
     $('.sliders').slick({
-      arrows: true,
       dots: true,
-      slidesToShow: 2,
+      infinite: false,
+      speed: 500,
+      slidesToShow: 4,
       slidesToScroll: 2,
-      autoplay: true,
-      autoplaySpeed: 3800,
-      variableWidth: true,
       prevArrow: '<button type="button" class="slick-prev"><img src="icons/arrow_left.svg" alt="arrow"></button>',
       nextArrow: '<button type="button" class="slick-next"><img src="icons/arrow_right.svg" alt="arrow"></button>',
       responsive: [
         {
-          breakpoint: 631,
+          breakpoint: 1145,
           settings: {
-            centerMode: true,
+            slidesToShow: 3,
+            slidesToScroll: 2,
           }
         },
+        {
+          breakpoint: 881,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 631,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
       ]
     });
+    // $('.sliders').slick({
+    //   arrows: true,
+    //   dots: true,
+    //   slidesToShow: 4,
+    //   slidesToScroll: 4,
+    //   autoplay: true,
+    //   autoplaySpeed: 3800,
+    //   variableWidth: true,
+    //   Infinity: false,
+    //   prevArrow: '<button type="button" class="slick-prev"><img src="icons/arrow_left.svg" alt="arrow"></button>',
+    //   nextArrow: '<button type="button" class="slick-next"><img src="icons/arrow_right.svg" alt="arrow"></button>',
+    //   responsive: [
+    //     {
+    //       breakpoint: 631,
+    //       settings: {
+    //         centerMode: true,
+    //       }
+    //     },
+    //   ]
+    // });
   });
   function burgerMenu(selector) {
     let menu = $(selector);
