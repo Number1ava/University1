@@ -209,14 +209,39 @@ const langArr = {
     en: "Buraimov Isroil",
   },
   teachers5: {
-    uz: "Bogibekov Azamat",
-    ru: "Богибеков Азамат",
-    en: "Bogibekov Azamat",
+    uz: "Karimov Abduhamid",
+    ru: "Каримов Абдухамид",
+    en: "Karimov Abdukhamid",
   },
   teachers6: {
-    uz: "Rejepov Jasur",
-    ru: "Реджепов Жасур",
-    en: "Rejepov Jasur",
+    uz: "Nurmamatova Sarvinoz",
+    ru: "Нурмаматова Сарвиноз",
+    en: "Nurmamatova Sarvinoz",
+  },
+  teachers7: {
+    uz: "Fedorova",
+    ru: "Фёдорова",
+    en: "Fedorova",
+  },
+  teachers8: {
+    uz: "Juraev Ibroxim",
+    ru: "Жураев Иброхим",
+    en: "Zhuraev Ibrokhim",
+  },
+  teachers9: {
+    uz: "Davletmuratov Sultonbek",
+    ru: "Давлетмуратов Султанбек",
+    en: "Davletmuratov Sultanbek",
+  },
+  teachers10: {
+    uz: "Rashidov Baxtiyor",
+    ru: "Рашидов Бахтиёр",
+    en: "Rashidov Bakhtiyor",
+  },
+  teachers11: {
+    uz: "Azamov Baxtiyor",
+    ru: "Азамов Бахтиёр",
+    en: "Azamov Bakhtiyor",
   },
 
 

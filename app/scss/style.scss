@@ -355,6 +355,13 @@ h6 {
   }
 }
 .sliders {
+  &__photo {
+    width: 100%;
+    height: 220px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+  }
   &__item {
     margin: 0;
     padding: 0;
@@ -393,7 +400,7 @@ h6 {
     z-index: 1;
   }
   & .slick-next {
-    right: 400px;
+    right: 386px;
     z-index: 1;
   }
 
@@ -418,7 +425,7 @@ h6 {
   & .slick-dots {
     position: absolute;
     margin: 20px;
-    left: 448px;
+    left: 430px;
     right: 0;
     top: 302px;
   }
