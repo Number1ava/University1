@@ -362,6 +362,7 @@ h6 {
     background-repeat: no-repeat;
     background-position-x: center;
   }
+
   &__item {
     margin: 0;
     padding: 0;
@@ -464,5 +465,9 @@ h6 {
       @include Exo2_Regular;
     }
   }
+}
+:focus {
+  background-color: #ff3b7e;
+  color: white;
 }
 @import "media";
