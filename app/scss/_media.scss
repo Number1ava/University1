@@ -1,16 +1,9 @@
-@media all and (max-width: 1330px) {
-  .header__main-figure {
-    top: 220px;
-    width: 580px;
-    height: 400px;
-  }
-}
-
-@media (max-width: 1200px) {
-  .menu {
-    &__list {
-      &-item {
-        margin-right: 40px;
+@media (max-width: 1260px) {
+  .header__main {
+    .topSlider {
+      width: 560px;
+      &__item-img {
+        height: 380px;
       }
     }
   }
@@ -156,10 +149,11 @@
         text-align: center;
         font-size: 34px;
       }
-      &-figure {
-        position: static;
-        width: 100%;
-        z-index: 1;
+      .topSlider {
+        width: 800px;
+        &__item-img {
+          height: 400px;
+        }
       }
     }
   }
@@ -241,6 +235,16 @@
       right: 125px;
     }
   }
+  .header__main {
+    .topSlider {
+      width: 660px;
+    }
+  }
+}
+@media (max-width: 818px) {
+  .header__main {
+    margin-bottom: 50px;
+  }
 }
 @media (max-width: 794px) {
   .header {
@@ -249,9 +253,6 @@
       &-subtitle {
         font-size: 30px;
         margin-bottom: 100px;
-      }
-      &-figure {
-        height: 370px;
       }
     }
   }
@@ -267,13 +268,20 @@
     margin-bottom: 40px;
   }
 }
+@media (max-width: 720px) {
+  .header__main {
+    .topSlider {
+      width: 600px;
+      &__item-img {
+        height: 340px;
+      }
+    }
+  }
+}
 @media (max-width: 680px) {
   .header {
     &__main {
-      padding-bottom: 60px;
-      &-figure {
-        height: 360px;
-      }
+      padding-bottom: 20px;
     }
   }
   .statsbar {
@@ -283,6 +291,16 @@
     margin: 0px 20px 30px;
     &__number {
       font-size: 46px;
+    }
+  }
+}
+@media (max-width: 650px) {
+  .header__main {
+    .topSlider {
+      width: 540px;
+      &__item-img {
+        height: 320px;
+      }
     }
   }
 }
@@ -300,11 +318,15 @@
 @media (max-width: 630px) {
   .header {
     &__main {
-      &-subtitle {
-        margin-bottom: 60px;
+      margin-bottom: 60px;
+      .topSlider {
+        width: 480px;
+        &__item-img {
+          height: 320px;
+        }
       }
-      &-figure {
-        height: 340px;
+      &-subtitle {
+        margin-bottom: 80px;
       }
     }
   }
@@ -348,15 +370,18 @@
         font-size: 28px;
         margin-bottom: 100px;
       }
-      &-figure {
-        height: 100%;
-      }
     }
   }
 }
 @media (max-width: 530px) {
   .header {
     &__main {
+      .topSlider {
+        width: 440px;
+        &__item-img {
+          height: 300px;
+        }
+      }
       &-subtitle {
         font-size: 26px;
         width: 380px;
@@ -393,8 +418,13 @@
 @media (max-width: 500px) {
   .header {
     min-height: 100vh;
-    padding-bottom: 60px;
     &__main {
+      .topSlider {
+        width: 400px;
+        &__item-img {
+          height: 300px;
+        }
+      }
       &-title {
         line-height: 26px;
       }
@@ -410,7 +440,7 @@
   }
   .sports {
     &__title {
-      font-size: 32px;
+      font-size: 28px;
       width: 250px;
     }
   }
@@ -442,6 +472,12 @@
   .header {
     &__main {
       margin-top: 70px;
+      .topSlider {
+        width: 380px;
+        &__item-img {
+          height: 280px;
+        }
+      }
       &-subtitle {
         font-size: 22px;
         line-height: 30px;
@@ -475,23 +511,33 @@
     flex-direction: column-reverse;
   }
 }
+@media (max-width: 430px) {
+  .header__main {
+    .topSlider {
+      width: 340px;
+      &__item-img {
+        height: 220px;
+      }
+    }
+  }
+}
 @media (max-width: 400px) {
   .header {
     padding-bottom: 0px;
     &__main {
       flex-direction: column-reverse;
       margin-top: 100px;
+      &-title {
+        margin-top: 100px;
+      }
       &-suptitle {
-        font-size: 19px;
+        font-size: 20px;
       }
       &-subtitle {
-        font-size: 19px;
+        font-size: 22px;
         line-height: 20px;
         width: 280px;
-        margin-bottom: 20px;
-      }
-      &-figure {
-        margin-bottom: 50px;
+        margin-bottom: 0px;
       }
     }
   }
@@ -504,6 +550,16 @@
       width: 254px;
       font-size: 25px;
       font-weight: 400;
+    }
+  }
+}
+@media (max-width: 388px) {
+  .header__main {
+    .topSlider {
+      width: 300px;
+      &__item-img {
+        height: 200px;
+      }
     }
   }
 }
