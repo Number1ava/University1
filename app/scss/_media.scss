@@ -320,6 +320,7 @@
   }
   .card {
     margin-bottom: 40px;
+    width: 65%;
   }
   .teachers {
     min-height: 485px;
@@ -414,7 +415,7 @@
     }
   }
   .card__box {
-    width: 300px;
+    width: 100%;
   }
   .teachers {
     min-height: 520px;
@@ -493,6 +494,9 @@
         margin-bottom: 50px;
       }
     }
+  }
+  .card {
+    width: 70%;
   }
   .teachers {
     .media__center {

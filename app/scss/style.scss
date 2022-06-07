@@ -467,7 +467,6 @@ h6 {
   }
 }
 :focus {
-  background-color: #ff3b7e;
-  color: white;
+  outline: 2px solid #ff3b7e;
 }
 @import "media";
