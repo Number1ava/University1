@@ -1,5 +1,10 @@
 const langArr = {
   // Элементы навигации
+  navLogo: {
+    uz: 'QSTNvaU',
+    ru: 'ТиМЗВС',
+    en: "TaMWS",
+  },
   navElem1: {
     uz: 'Yangiliklar',
     ru: 'Новости',
@@ -219,9 +224,9 @@ const langArr = {
     en: "Nurmamatova Sarvinoz",
   },
   teachers7: {
-    uz: "Fedorova",
-    ru: "Фёдорова",
-    en: "Fedorova",
+    uz: "Svetlana Fedorova",
+    ru: "Светлана Фёдорова",
+    en: "Svetlana Fedorova",
   },
   teachers8: {
     uz: "Juraev Ibroxim",
@@ -244,6 +249,62 @@ const langArr = {
     en: "Azamov Bakhtiyor",
   },
 
+  // Должность преподователей
+  teachers1_Job: {
+    uz: "O'qituvchi",
+    ru: "Преподаватель",
+    en: "Teacher",
+  },
+  teachers2_Job: {
+    uz: "O'qituvchi",
+    ru: "Преподаватель",
+    en: "Teacher",
+  },
+  teachers3_Job: {
+    uz: "O'qituvchi",
+    ru: "Преподаватель",
+    en: "Teacher",
+  },
+  teachers4_Job: {
+    uz: "O'qituvchi",
+    ru: "Преподаватель",
+    en: "Teacher",
+  },
+  teachers5_Job: {
+    uz: "Kafedra mudiri",
+    ru: "Заведующий кафедрой",
+    en: "Head of the department",
+  },
+  teachers6_Job: {
+    uz: "Stajyor o'qituvchi",
+    ru: "Преподаватель стажёр",
+    en: "Trainee teacher",
+  },
+  teachers7_Job: {
+    uz: "Katta o'qituvchi",
+    ru: "Старший преподаватель",
+    en: "Senior Lecturer",
+  },
+  teachers8_Job: {
+    uz: "O'qituvchi",
+    ru: "Преподаватель",
+    en: "Teacher",
+  },
+  teachers9_Job: {
+    uz: "PhD, dotsent",
+    ru: "PhD, доцент",
+    en: "PhD, docent",
+  },
+  teachers10_Job: {
+    uz: "Katta o'qituvchi",
+    ru: "Старший преподаватель",
+    en: "Senior Lecturer",
+  },
+  teachers11_Job: {
+    uz: "O'qituvchi",
+    ru: "Преподаватель",
+    en: "Teacher",
+  },
 
   // Footer: Подвал сайта
   footer_title1: {

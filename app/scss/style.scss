@@ -134,7 +134,7 @@ h6 {
 
 .header {
   min-height: 100vh;
-  background-image: url("../images/figure_bg.png");
+  background-image: url("../images/figure_bg2.png");
   @include background_size;
   color: white;
   padding-bottom: 40px;
@@ -144,7 +144,7 @@ h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 150px;
+  margin-bottom: 200px;
   &__list {
     display: flex;
     align-items: center;
@@ -195,10 +195,9 @@ h6 {
   }
 }
 .header__main {
-  display: flex;
-  justify-content: space-evenly;
   align-items: center;
   color: white;
+  margin: 0 0 0 100px;
   &-title {
     font-size: 20px;
     line-height: 40px;
@@ -211,15 +210,7 @@ h6 {
     font-size: 34px;
     @include Exo2_SemiBold;
   }
-  .topSlider {
-    width: 660px;
-    &__item-img {
-      width: 100%;
-      height: 400px;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-  }
+
   & .slick-dots button {
     width: 18px;
     height: 18px;
@@ -401,16 +392,23 @@ h6 {
     border-radius: 6px;
     @include card_bg;
     &-bottom {
+      text-align: center;
       background-color: #0061ff;
+      color: white;
     }
     &-subtitle {
       font-weight: 700;
       line-height: 24px;
       text-align: center;
       letter-spacing: 0.1px;
-      color: white;
       padding-top: 6px;
       @include Exo2_Regular;
+    }
+    &-jobTitle {
+      margin: 4px 0 2px 0;
+      padding: 10px 0;
+      background-color: #1b3053;
+      @include Exo2_SemiBold;
     }
   }
   & .slick-slide {
@@ -424,7 +422,7 @@ h6 {
     cursor: pointer;
     position: absolute;
     background-color: transparent;
-    top: 340px;
+    top: 370px;
     transform: translateY(-50%);
     z-index: 5;
   }
@@ -460,7 +458,7 @@ h6 {
     margin: 20px;
     left: 430px;
     right: 0;
-    top: 302px;
+    top: 332px;
   }
 }
 .footer {

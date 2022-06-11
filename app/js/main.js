@@ -10,41 +10,32 @@ window.addEventListener("DOMContentLoaded", function () {
 
   let a = 0;
 
-  $(function () {
-    $('.topSlider').slick({
-      dots: true,
-      arrows: false,
-      infinite: true,
-      speed: 700,
-      autoplay: true,
-    });
-  }),
-    $(window).scroll(function () {
-      let oTop = $('.statsbar').offset().top - window.innerHeight;
+  $(window).scroll(function () {
+    let oTop = $('.statsbar').offset().top - window.innerHeight;
 
-      if (a == 0 && $(window).scrollTop() > oTop) {
-        $('.stat__number').each(function () {
-          let $this = $(this),
-            countTo = $this.attr('data-n');
+    if (a == 0 && $(window).scrollTop() > oTop) {
+      $('.stat__number').each(function () {
+        let $this = $(this),
+          countTo = $this.attr('data-n');
 
-          $({
-            countNum: $this.text()
-          }).animate({
-            countNum: countTo
-          }, {
-            duration: 2000,
-            easing: 'swing',
-            step: function () {
-              $this.text(Math.floor(this.countNum));
-            },
-            complete: function () {
-              $this.text(this.countNum);
-            }
-          });
+        $({
+          countNum: $this.text()
+        }).animate({
+          countNum: countTo
+        }, {
+          duration: 2000,
+          easing: 'swing',
+          step: function () {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function () {
+            $this.text(this.countNum);
+          }
         });
-        a = 1;
-      }
-    });
+      });
+      a = 1;
+    }
+  });
 
   $(function () {
     $('.sliders').slick({
