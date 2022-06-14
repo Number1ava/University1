@@ -364,6 +364,7 @@ h6 {
 // Section ======= teachers
 .teachers {
   min-height: 540px;
+  padding-bottom: 120px;
 }
 .social__network {
   display: flex;
@@ -401,13 +402,13 @@ h6 {
       line-height: 24px;
       text-align: center;
       letter-spacing: 0.1px;
-      padding-top: 6px;
+      padding: 10px 0;
+      background: #1b3053;
       @include Exo2_Regular;
     }
     &-jobTitle {
+      padding: 5px 0;
       margin: 4px 0 0px 0;
-      padding: 10px 0;
-      background-color: #1b3053;
       @include Exo2_SemiBold;
     }
   }
