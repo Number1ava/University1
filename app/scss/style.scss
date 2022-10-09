@@ -6,6 +6,9 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  background-color: #1b3053;
+}
 *,
 *::before,
 *::after {
@@ -40,13 +43,18 @@ h6 {
 .hidden {
   overflow: hidden;
 }
-.container__header {
+.container {
   max-width: 1615px;
   margin: 0 auto;
   padding: 0 15px;
 }
 .container__main {
   max-width: 1035px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.container__figureSkating {
+  max-width: 1330px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -476,7 +484,7 @@ h6 {
       @include Exo2_Bold;
     }
     &-link {
-      color: black;
+      color: white;
       margin: 10px 0;
       display: block;
       @include Exo2_Regular;
@@ -488,15 +496,40 @@ h6 {
     &-phone {
       display: block;
       margin: 14px 0;
-      color: black;
+      color: white;
       font-family: inherit;
     }
     &-location {
       margin-bottom: 15px;
+      color: white;
       @include Exo2_Regular;
     }
   }
 }
+
+// figureSkating.html =======================================================================================
+
+.figure {
+  min-height: 1400px;
+  text-align: center;
+  &__title {
+    margin: 70px 0 50px 0;
+    font-size: 32px;
+  }
+  &__text {
+    color: white;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: justify;
+    @include Exo2_SemiBold;
+  }
+  &__images {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
 :focus {
   outline: 2px solid #ff3b7e;
 }
