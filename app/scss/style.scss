@@ -480,7 +480,8 @@ h6 {
     max-width: 137px;
     &-title {
       margin-bottom: 25px;
-      color: #0061ff;
+      color: #1b3053;
+      font-size: 18px;
       @include Exo2_Bold;
     }
     &-link {
@@ -500,7 +501,7 @@ h6 {
       font-family: inherit;
     }
     &-location {
-      margin-bottom: 20px;
+      margin-bottom: 19px;
       color: #0061ff;
       @include Exo2_SemiBold;
     }
@@ -510,7 +511,7 @@ h6 {
 // figureSkating.html =======================================================================================
 
 .figure {
-  min-height: 1400px;
+  min-height: 1800px;
   text-align: center;
   &__title {
     margin: 70px 0 50px 0;
@@ -521,12 +522,20 @@ h6 {
     line-height: 30px;
     font-size: 20px;
     text-align: justify;
+    margin-bottom: 70px;
     @include Exo2_SemiBold;
+  }
+  &__images > img {
+    border-radius: 1%;
   }
   &__images {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
+    &-ski {
+      width: 1135px;
+      margin: 40px 0px 100px 0px;
+    }
   }
 }
 
