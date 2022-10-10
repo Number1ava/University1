@@ -9,55 +9,34 @@ window.addEventListener("DOMContentLoaded", function () {
   });
 
 
-  $(function () {
-    let show = true;
-    let countbox = ".counter";
-    $(window).on("scroll load resize", function () {
-      if (!show) return false;
-      let w_top = $(window).scrollTop();
-      let e_top = $(countbox).offset().top;
-      let w_height = $(window).height();
-      let d_height = $(document).height();
-      let e_height = $(countbox).outerHeight();
-      if (w_top + 400 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
-        $('.stat__number').spincrement({
-          thousandSeparator: "",
-          duration: 4000
+  let a = 0;
+
+  $(window).scroll(function () {
+    let oTop = $('.counter').offset().top - window.innerHeight;
+
+    if (a == 0 && $(window).scrollTop() > oTop) {
+      $('.stat__number').each(function () {
+        let $this = $(this),
+          countTo = $this.attr('data-n');
+
+        $({
+          countNum: $this.text()
+        }).animate({
+          countNum: countTo
+        }, {
+          duration: 2000,
+          easing: 'swing',
+          step: function () {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function () {
+            $this.text(this.countNum);
+          }
         });
-        show = false;
-
-      }
-    });
+      });
+      a = 1;
+    }
   });
-
-  // let a = 0;
-
-  // $(window).scroll(function () {
-  //   let oTop = $('.statsbar').offset().top - window.innerHeight;
-
-  //   if (a == 0 && $(window).scrollTop() > oTop) {
-  //     $('.stat__number').each(function () {
-  //       let $this = $(this),
-  //         countTo = $this.attr('data-n');
-
-  //       $({
-  //         countNum: $this.text()
-  //       }).animate({
-  //         countNum: countTo
-  //       }, {
-  //         duration: 2000,
-  //         easing: 'swing',
-  //         step: function () {
-  //           $this.text(Math.floor(this.countNum));
-  //         },
-  //         complete: function () {
-  //           $this.text(this.countNum);
-  //         }
-  //       });
-  //     });
-  //     a = 1;
-  //   }
-  // });
 
 
   $(function () {

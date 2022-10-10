@@ -142,7 +142,7 @@ h6 {
 
 .header {
   min-height: 100vh;
-  background-image: url("../images/figure_bg2.png");
+  background-image: url("../images/figure_bg.png");
   @include background_size;
   color: white;
   padding-bottom: 40px;
@@ -471,6 +471,7 @@ h6 {
 }
 .footer {
   min-height: 200px;
+  background-color: white;
   &__wrapper {
     display: flex;
     padding: 50px 0px;
@@ -483,25 +484,25 @@ h6 {
       @include Exo2_Bold;
     }
     &-link {
-      color: white;
+      color: #0061ff;
       margin: 10px 0;
       display: block;
-      @include Exo2_Regular;
+      @include Exo2_SemiBold;
     }
   }
   &__content2 {
-    @include Exo2_Regular;
+    @include Exo2_SemiBold;
     margin-left: 20px;
     &-phone {
       display: block;
       margin: 14px 0;
-      color: white;
+      color: #0061ff;
       font-family: inherit;
     }
     &-location {
-      margin-bottom: 15px;
-      color: white;
-      @include Exo2_Regular;
+      margin-bottom: 20px;
+      color: #0061ff;
+      @include Exo2_SemiBold;
     }
   }
 }
